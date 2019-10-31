@@ -1,6 +1,19 @@
 function fetchBooks() {
 
+fetch("https://anapioficeandfire.com/api/books")
+return fetch("https://anapioficeandfire.com/api/books")
+  .then(resp => resp.json())
+  .then(json => renderBooks(json))
 }
+
+  // To pass this lab, this function should include a fetch request to the Game of Thrones API 
+  // ('https://anapioficeandfire.com/api/books').
+  // The returned response should be converted to JSON. 
+  // Then, call the second function, renderBooks(), passing in the API's returned JSON data as the argument.
+
+
+
+
 
 function renderBooks(json) {
   const main = document.querySelector('main')
